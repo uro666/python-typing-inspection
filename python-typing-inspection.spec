@@ -9,9 +9,13 @@ Summary:	Provides tools to inspect type annotations at runtime
 URL:		https://pypi.org/project/typing-inspection/
 License:	MIT
 Group:		Development/Python
-BuildRequires:	python
 BuildSystem:	python
 BuildArch:	noarch
+BuildRequires:	python
+BuildRequires:	pkgconfig(python3)
+BuildRequires:	python-hatchling
+BuildRequires:	python-typing-extensions >=4.12.0
+Requires:	python-typing-extensions >=4.12.0
 
 %description
 python-%{module} provides tools to inspect type annotations at runtime.
